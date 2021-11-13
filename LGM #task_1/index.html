@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+    <!--Life in Zippy Image Scroll using JavaScript-->
+    <script type="text/javascript">
+        var left=1;
+        var right=5;
+        function show()
+        {
+            for(i=left;i<=right;i++)
+            {
+                document.getElementById("c"+i).style.display="inline-block";
+            }
+        }
+        function moveLeft(){
+            if(left<=3 && right<=7)
+            {
+                document.getElementById("c"+left).style.display="none";
+                left+=1;
+                right+=1;
+                for(i=left;i<=right;i++)
+                {
+                    document.getElementById("c"+i).style.display="inline-block";
+                }
+            }
+            else
+            {
+                return;
+            }
+        }
+        function moveRight(){
+            if(left>=2 && right>=6)
+            {
+                document.getElementById("c"+right).style.display="none";
+                left-=1;
+                right-=1;
+                for(i=left;i<=right;i++)
+                {
+                    document.getElementById("c"+i).style.display="inline-block";
+                }
+            }
+            else
+            {
+                return;
+            }
+        }
+    </script>
+</head>
+<body onload="show()">
+    <!--Navigation Section-->
+        <div class="nav">
+            <a href="#">HOME</a>
+            <a href="#">PROJECTS</a>
+            <a href="#">PRICING</a>
+            <a href="#">TEAM</a>
+            <a href="#">BLOG</a>
+            <a href="#">CONTACT</a>
+        </div>
+    <!--Header Section-->
+    <div class="container">
+        <div class="content">
+            <p>One page promising to fill all your needs</p>
+            <h6>We bring you powerful advantages to navigate your digital transformation</h6>
+        </div>
+        <div class="button">
+            <button type="button" class="btn btn-outline-light">LEARN MORE</button>
+            <button type="button" class="btn btn-outline-light">READ MORE</button>
+        </div>
+    </div>
+
+    <!--Welcome page-->
+        <div class="item" style="align-items: center;">
+            <p>Welcome to Zippy</p>
+            <h6>The website you’re building may contain two types of text: graphic text and HTML text.
+                HTML text is also called live text because it is fully editable, just like the text in
+                your word processor. You can apply various font and size settings to live text using CSS styles,
+                or even just with HTML, and you can update the text easily, making live text the ideal 
+                choice for your website.</h6>
+        <div class="item_container">
+            <div class="item_content">
+                <h5>LOREM IPSUM</h5>
+                <h6>The website you’re building may contain two types of text: graphic text 
+                    and HTML text.HTML text is also called live text because it is fully editable, just like
+                    the text in your word processor.<i class="fas fa-bell"></i></h6>
+                <button type="button" class="btn btn-primary">LEARN MORE</button>
+            </div>
+            <div class="item_content">
+                <h5>DOLOR SIT</h5>
+                <h6>The website you’re building may contain two types of text: graphic text 
+                    and HTML text.HTML text is also called live text because it is fully editable, just like
+                    the text in your word processor.<i class="fas fa-bell"></i></h6>
+                <button type="button" class="btn btn-primary">LEARN MORE</button>
+            </div>
+            <div class="item_content">
+                <h5>CONSECTETURE</h5>
+                <h6>The website you’re building may contain two types of text: graphic text
+                    and HTML text . HTML text is also called live text because it is fully editable, 
+                    just like the text in your word processor.<i class="fas fa-bell"></i></h6>
+                <button type="button" class="btn btn-primary" >LEARN MORE</button>
+            </div>
+        </div>
+        </div>
+    <hr style="margin-left: 10%;margin-right: 10%;">
+
+        <!--Project Section-->
+        <div class="next">
+                <p style="text-align: center;font-weight: bold;font-family: cosmic,sans-serif;font-size: 50px;">
+                    Projects</p>
+        <div class="next_container">
+            <div class="item">
+            <div class="item_img">
+                <img src="E:/LGM/proj1.jpg"></div>
+            <div class="item_content">
+                <h5>PROJECT NAME</h5>
+                <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                    ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                     laboris nisi ut aliquip ex ea commodo consequat.</h6>
+                     <button type="readmore" class="btn btn-primary">LAUNCH CASE STUDY</button>
+                </div>
+            </div>
+            <div class="item">
+            <div class="item_img">
+                <img src="E:/LGM/proj5.jpg"></div>
+            <div class="item_content">
+                <h5>PROJECT NAME</h5>
+                <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                    ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                     laboris nisi ut aliquip ex ea commodo consequat.</h6>
+                <button type="readmore" class="btn btn-primary">LAUNCH CASE STUDY</button>
+            </div>
+            </div>
+            <div class="item">
+            <div class="item_img">
+                <img src="E:/LGM/proj3.jpg"></div>
+            <div class="item_content">
+                <h5>PROJECT NAME</h5>
+                <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                    ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                     laboris nisi ut aliquip ex ea commodo consequat.</h6>
+                     <button type="readmore" class="btn btn-primary">LAUNCH CASE STUDY</button>
+                </div>
+            </div>
+            <div class="item">
+            <div class="item_img">
+                <img src="E:/LGM/proj4.jpg"></div>
+            <div class="item_content">
+                <h5>PROJECT NAME</h5>
+                <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                    ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                     laboris nisi ut aliquip ex ea commodo consequat.</h6>
+                     <button type="readmore" class="btn btn-primary">LAUNCH CASE STUDY</button>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <!--Pricing Section-->
+        <div class="price">
+            <p>Pricing Table</p>
+            <div class="price_container">
+            <div class="price_content">
+                <h5>STANDARD PLAN</h5>
+                <h6>Free</h6>
+                <ul><li>Custom & secure business email</li></ul>
+                <ul><li>100 participant video meetings</li></ul>
+                <ul><li>30 GB cloud storage per user</li></ul>
+                <ul><li>Security & management controls</li></ul>
+                <ul><li>Standard Support</ul>
+                <button type="readmore" class="btn btn-primary">BUY NOW</button>
+            </div>
+            <div class="price_content">
+                <h5>PREMIUM PLAN</h5>
+                <h6>18$/MONTH</h6>
+                <ul><li>Custom & secure business email</li></ul>
+                <ul><li>100 participant video meetings</li></ul>
+                <ul><li>30 GB cloud storage per user</li></ul>
+                <ul><li>Security & management controls</li></ul>
+                <ul><li>Standard Support</ul>
+                <button type="readmore" class="btn btn-primary">BUY NOW</button>
+            </div>
+            <di class="price_content">
+                <h5>BUSINESS PLAN</h5>
+                <h6>15$/MONTH</h6>
+                <ul><li>Custom & secure business email</li></ul>
+                <ul><li>100 participant video meetings</li></ul>
+                <ul><li>30 GB cloud storage per user</li></ul>
+                <ul><li>Security & management controls</li></ul>
+                <ul><li>Standard Support</li></ul>
+                <button type="readmore" class="btn btn-primary">BUY NOW</button>
+            </div>
+            </div>
+        </div>
+
+        <!--Video Section-->
+        <div class="video">
+            <p>Video Projects</p>
+            <div class="video_content">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <video  controls> <source src="E:/LGM/v2.mp4" type="video/mp4"></video>
+                      </div>
+                      <div class="carousel-item">
+                        <video  controls> <source src="E:/LGM/v3.mp4" type="video/mp4"></video>
+                      </div>
+                      <div class="carousel-item">
+                        <video  controls> <source src="E:/LGM/v1.mp4" type="video/mp4"></video>
+                      </div>
+                      <div class="carousel-item">
+                        <video  controls> <source src="E:/LGM/v4.mp4" type="video/mp4"></video>
+                      </div>
+                      <div class="carousel-item">
+                        <video  controls> <source src="E:/LGM/v5.mp4" type="video/mp4"></video>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div> 
+            </div>
+        </div>
+
+        <!--Team Section-->
+        <div class="team">
+            <p>Zippy Team</p>
+            <div class="team_container1">
+            <div class="team_content">
+            <img src="E:/LGM/n1.jpg">
+            <h5>LISA JOHN</h5>
+            <p>Creative Head</p>
+            <p><a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a></p></div>
+            <div class="team_content">
+            <img src="E:/LGM/n2.jpg">
+            <h5>MATT ALEX</h5>
+            <p>Art Director</p>
+            <p><a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a></p></div>
+            <div class="team_content">
+            <img src="E:/LGM/n3.jpg">
+            <h5>JIMMY SMITH</h5>
+            <p>Senior Designer</p>
+            <p><a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a></p></div></div>
+            <div class="team_container2">
+            <div class="team_content">
+            <img src="E:/LGM/n4.jpg">
+            <h5>ROSE WILLSON</h5>
+            <p>Marketing Manager</p>
+            <p><a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a></p></div>
+            <div class="team_content">
+            <img src="E:/LGM/n5.jpg">
+            <h5>SARA JOHNSON</h5>
+            <p>SEO Monster</p>
+            <p><a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a></p></div>
+            <div class="team_content">
+            <img src="E:/LGM/n6.jpg">
+            <h5>CHRIS PHILIPS</h5>
+            <p>Senior Designer</p>
+            <p><a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a></p></div>
+        </div>
+        </div>
+        <br>
+    
+        <!--Life Section-->
+        <div class="life">
+            <p>Life in Zippy</p>
+            <div class="life_img">
+                <img src="E:/LGM/life.jpg"></div>
+            <div class="carousel_container">
+            <div id="leftarrow" onclick="moveLeft()">
+                    <button>&lt;</button>
+            </div>
+            <div class="carousel_img" id="c1">
+                <img src="E:/LGM/l9.jpg">
+            </div>
+            <div class="carousel_img" id="c2">
+                <img src="E:/LGM/l8.jpg">
+            </div>
+            <div class="carousel_img" id="c3">
+                <img src="E:/LGM/l7.jpg">
+            </div>
+            <div class="carousel_img" id="c4">
+                <img src="E:/LGM/l6.jpg">
+            </div>
+            <div class="carousel_img" id="c5">
+                <img src="E:/LGM/l5.jpg">
+            </div>
+            <div class="carousel_img" id="c6">
+                <img src="E:/LGM/l4.jpg">
+            </div>
+            <div class="carousel_img" id="c7">
+                <img src="E:/LGM/office.jpg">
+            </div>
+            <div class="carousel_img" id="c8">
+                <img src="E:/LGM/l1.jpg">
+            </div>
+            <div class="carousel_img" id="c9">
+                <img src="E:/LGM/l2.jpg">
+            </div>
+            <div class="carousel_img" id="c10">
+                <img src="E:/LGM/l3.jpg">
+            </div>
+            <div id="rightarrow" onclick="moveRight()">
+                <button>&gt;</button>
+            </div>
+            </div>
+            </div>
+        </div>
+        <br>
+        <!--Newsletter Signup Section-->
+        <div class="signup">
+            <p>Newsletter Signup</p>
+            <div class="mb-3" style="width: 37.1%;margin-left: 25%;">
+                <label for="exampleInputName" class="form-label"></label>
+                <input type="email" class="form-control" id="email">
+                <button type="signup" class="btn btn-primary">SIGN UP</button>
+            </div>
+        </div>
+        <br>
+
+        <!--Blog Section-->
+        <div class="blog" style="float: left;">
+            <p>Blog</p>
+            <div class="blog_container">
+                <div class="blog_content">
+                <div class="blog_img">
+            <img src="E:/LGM/job.jpg"></div>
+            <div class="blog_text">
+            <h4>LOREM IPSUM</h4>
+            <h5>4th April 2021</h5>
+            <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                 ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat. </h6></div>
+                  <button type="readmore" class="btn btn-primary">READ MORE</button></div>
+            <div class="blog_content">
+            <div class="blog_img">
+            <img src="E:/LGM/work.jpg"></div>
+            <div class="blog_text">
+            <h4>LOREM IPSUM</h4>
+            <h5>10th June 2021</h5>
+            <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                 laboris nisi ut aliquip ex ea commodo consequat.</h6></div>
+                 <button type="readmore" class="btn btn-primary">READ MORE</button></div>
+            <div class="blog_content">
+            <div class="blog_img">
+            <img src="E:/LGM/good.jpg"></div>
+            <div class="blog_text">
+            <h4>LOREM IPSUM</h4>
+            <h5>8th September 2021</h5>
+            <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                 laboris nisi ut aliquip ex ea commodo consequat.</h6></div>
+                 <button type="readmore" class="btn btn-primary">READ MORE</button></div>
+                 </div>
+            </div>
+        <br>
+
+        <!--Map & Form Section-->
+        <div class="fg" style="float: left;">
+            <div class="g_map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3884.4186765457266!2d77.70192441430648!3d13.199010513419758!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1d45513861cf%3A0xed8d399eb150b3a8!2sBangalore%20international%20airport!5e0!3m2!1sen!2sin!4v1630840786782!5m2!1sen!2sin" 
+                width="675" height="600" style="border:0;"  loading="lazy"></iframe>
+            </div>
+        <div class="form">
+            <form>
+                    <div class="mb-3" style="width: 70%;">
+                        <label for="exampleInputName" class="form-label">NAME</label>
+                        <input type="name" class="form-control" id="Name">
+                    </div>
+                    <div class="mb-3" style="width: 70%;">
+                            <label for="exampleInputEmail1" class="form-label">EMAIL ADDRESS</label>
+                            <input type="email" class="form-control" id="Email1">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-3" style="width: 70%;">
+                        <label for="exampleInputProject" class="form-label">PROJECT</label>
+                        <input type="project" class="form-control" id="Project">
+                    </div>
+                    <div class="mb-3" style="width: 70%;">
+                        <label for="exampleInputMessage">MESSAGE</label>
+                        <textarea class="form-control" rows="5" id="Message"></textarea>
+                    </div>
+                    <button type="send" class="btn btn-primary">SEND</button>
+            </form>
+        </div>
+        </div>
+        <br>
+
+        <!--Footer Section-->
+        <div class="footer">
+            <div class="address">
+                <h5><b>OFFICE ADDRESS</b></h5><br>
+                <p>Loreum Ipsium dolor,234</p> 
+                <p>1200 Consectune </p>
+                <p>Adipaching</p>
+            </div>
+            <div class="social">
+                <h5><b style="margin-left: 90px;">FOLLOW US</b></h5><br>
+            <div class="icon">
+               <a href="#"><i class="fa fa-facebook fa-2x"  aria-hidden="true" style="color: #8E44AD;"></i></a>
+                <a href="#"><i class="fa fa-instagram fa-2x" aria-hidden="true" style="color: #8E44AD;"></i></a>
+                <a href="#"><i class="fa fa-linkedin fa-2x" aria-hidden="true" style="color: #8E44AD;"></i></a></div>
+            <div class="icon_1">
+                <a href="#"><i class="fa fa-twitter fa-2x" style="color: #8E44AD;"></i></a>
+                <a href="#"><i class="fa fa-google-plus fa-2x" style="color: #8E44AD;"></i></a>
+                <a href="#"><i class="fa fa-tumblr fa-2x" style="color: #8E44AD;"></i></a>
+                </div>
+            </div>
+        <div class="contact">
+            <h5><b>CONTACT US</b></h5><br>
+            <p>+ 123456 789</p>
+            <p>zippy@skype</p>
+            <p>enquiry@zippy.com</p>
+        </div>
+        </div>
+
+        <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
