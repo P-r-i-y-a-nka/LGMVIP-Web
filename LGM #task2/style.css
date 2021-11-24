@@ -1,0 +1,54 @@
+.App {
+    height: 200px;
+    padding-top: 20px;
+    text-align: center;
+    font-family: sans-serif;
+  }
+  body {
+    background-color: black;
+  }
+  .App button {
+    margin-left: 31em;
+    border: none;
+    margin: 40px 0px 50px 0px;
+    background-color: #daf7a6;
+    padding: 20px;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+    border-radius: 10%;
+  }
+  .App button:hover {
+    background-color: #b37cd2;
+    color: white;
+  }
+  .App .item_container {
+    margin-top: 0;
+    margin-left: -0.5em;
+    color: white;
+  }
+  .App .item_data {
+    margin-left: 31.5em;
+    text-align: center;
+    padding-top: 20px;
+    background-color: #daf7a6;
+    color: black;
+    height: 320px;
+    font-size: 15px;
+    margin-bottom: 50px;
+    border-radius: 25px;
+    width: 400px;
+    font-weight: bold;
+  }
+  .App .item_data:hover {
+    border: 3px solid white;
+    outline-style: outset;
+    outline-color: white;
+  }
+  .App .item_data img {
+    border-radius: 50%;
+    object-fit: cover;
+    height: 140px;
+    width: 140px;
+  }
+  
